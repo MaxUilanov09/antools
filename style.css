@@ -1,0 +1,27 @@
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration:none;
+}
+
+.container {
+    width: 1440px;
+    padding: 0 108px;
+}
+
+.section-newcomertools-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.section-newcomertools-welcome { grid-area: 1 / 1 / 5 / 3; }
+.section-newcomertools-item1 { grid-area: 1 / 3 / 2 / 4; }
+.section-newcomertools-item2 { grid-area: 1 / 4 / 2 / 5; }
+.section-newcomertools-item3 { grid-area: 2 / 3 / 3 / 4; }
+.section-newcomertools-item4 { grid-area: 2 / 4 / 3 / 5; }
