@@ -1,16 +1,98 @@
+:root {
+    --project-background-color: rgba(30, 37, 43, 1);
+    --pure-white-button-color: rgba(255, 255, 255, 1);
+    --white-title-color: rgba(255, 255, 255, 0.9);
+    --partners-title-color: rgba(255, 255, 255, 0.8);
+    --unfocused-text-color: rgba(255, 255, 255, 0.78);
+    --semi-transparent-text-color: rgba(255, 255, 255, 0.55);
+    --partners-text-color: rgba(255, 255, 255, 0.2);
+    --button-border-color: rgba(255, 255, 255, 0.1);
+    --input-placeholder-color: rgba(131, 122, 147, 1);
+    --aftertitle-color: rgba(255, 165, 55, 0.55);
+    --focused-aftertitle-color: rgba(255, 165, 55, 0.55);
+    --background-button-color: rgba(255, 110, 48, 1);
+    --product-item-gradient-color: rgba(255, 110, 48, 0.6);
+    --background-input-color: rgba(40, 48, 54, 1);
+    --product-item-gradient: radial-gradient(circle at 87.6% 9%, var(--product-item-gradient-color) 0%, var(--background-input-color) 12.3%); /* 87.6% 9% */
+}
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins";
+    background-color: var(--project-background-color);
 }
 
 .container {
     width: 1440px;
-    padding: 0 108px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid red;
 }
+
+.section-welcome {
+    background-image: url(./images/header_background_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* icon size start */
+
+.section-welcome-icon-image {
+    width: 36px;
+    height: 36px;
+}
+
+.section-products-icon-heart-image, .section-newcomertools-icon-heart-image {
+    width: 28px;
+    height: 28px;
+}
+
+.section-products-icon-add-image, .section-newcomertools-icon-add-image {
+    width: 30px;
+    height: 30px;
+}
+
+/* icon size end */
+
+/* text decoration start */
+
+.title {
+    color: var(--white-title-color);
+    font-size: 48px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.section-welcome-text, .section-products-text, .section-products-item-text, .section-newcomertools-text, .section-newcomertools-item-text, .section-products-item-button, .section-newcomertools-item-button {
+    color: var(--semi-transparent-text-color);
+}
+
+.employee-text {
+    color: var(--unfocused-text-color);
+    font-family: "Roboto";
+}
+
+/* text decoration end */
+
+/* button decoration start */
+
+button {
+    background: transparent;
+    border: none
+}
+
+/* button decoration end */
+
+/* grid settings start */
 
 .section-newcomertools-list {
     display: grid;
@@ -25,3 +107,225 @@ a {
 .section-newcomertools-item2 { grid-area: 1 / 4 / 2 / 5; }
 .section-newcomertools-item3 { grid-area: 2 / 3 / 3 / 4; }
 .section-newcomertools-item4 { grid-area: 2 / 4 / 3 / 5; }
+
+/* grid settings end */
+
+
+/* header setting start */
+
+.header-wrap {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.header-list-connections {
+    display: flex;
+    width: 431px;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.header-list-login {
+    display: flex;
+    width: 203px;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.logo {
+    color: var(--white-title-color);
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.logo-header::before {
+    content: " ";
+    display: inline-block;
+    width: 19px;
+    height: 21px;
+    margin-right: 22px;
+    background-image: url(./images/icon_logo_header.png);
+}
+
+.header-link {
+    color: var(--semi-transparent-text-color);
+}
+
+.header-button {
+    width: 118px;
+    height: 48px;
+    color: var(--unfocused-text-color);
+}
+
+.header-button:hover {
+    color: var(--pure-white-button-color);
+    background-color: var(--background-button-color);
+    border-radius: 8px;
+}
+
+/* header setting end */
+
+
+/* section welcome setting start */
+
+/* .section-welcome-wrap {
+    margin-left: 108px;
+} */
+
+.section-welcome-title {
+    display: block;
+    width: 600px;
+    color: var(--white-title-color);
+    font-size: 50px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.section-welcome-text {
+    display: block;
+    width: 487px;
+    font-size: 18px;
+    line-height: 1.667;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.section-welcome-form {
+    display: flex;
+    width: 498px;
+    height: 64px;
+    background-color: var(--background-input-color);
+    border-radius: 15px;
+    margin-bottom: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-welcome-form-input {
+    background: none;
+    border: none;
+    margin-left: 55px;
+}
+
+.section-welcome-form-input::before {
+    content: " ";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 13px;
+    background-image: url(./images/icon_search.png);
+}
+
+.section-welcome-form-button {
+    width: 130px;
+    height: 48px;
+    color: var(--pure-white-button-color);
+    background-color: var(--background-button-color);
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.section-welcome-icons-list {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 190px;
+}
+
+/* section welcome setting end */
+
+/* section products setting start */
+
+.section-products-title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.3;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.section-products-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.667;
+    font-weight: 500;
+    margin-bottom: 90px;
+}
+.section-products-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-products-item {
+    display: block;
+    width: 392px;
+    height: 294px;
+    border-radius: 15px;
+}
+.section-products-item:hover {
+    transform: translate(0px, -20px);
+    background: var(--product-item-gradient);
+}
+.section-products-item-wrap {
+    display: inline-block;
+    margin-left: 30px;
+}
+.section-products-item-title {
+    color: var(--unfocused-text-color);
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.section-products-item-aftertitle {
+    color: var(--aftertitle-color);
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.section-products-item-text {
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.section-product-buttons-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-products-icons-list {
+    display: flex;
+    justify-content: space-between;
+    width: 96px;
+}
+.section-products-icon-button:hover {
+    color: var(--background-input-color);
+    border-radius: 8px;
+    /* TODO: Make the heart red */
+}
+.section-products-item-button {
+    width: 106px;
+    height: 42px;
+    color: var(--unfocused-text-color);
+}
+.section-products-item-button:hover {
+    color: var(--pure-white-button-color);
+    background-color: var(--background-button-color);
+    border-radius: 8px;
+}
+.section-products-button {
+    display: block;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 17px 38px;
+    color: var(--background-button-color);
+    border: 1px solid var(--button-border-color);
+}
+
+/* section products setting end */

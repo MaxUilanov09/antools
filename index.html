@@ -4,6 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Antools</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,39 +15,43 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
-				<a href="#" class="logo logo-header">antools</a>
-				<ul class="header-list-connections">
-					<li class="header-item"><a href="" class="header-link">Home</a></li>
-					<li class="header-item">
-						<a href="" class="header-link">Categories</a>
-					</li>
-					<li class="header-item">
-						<a href="" class="header-link">My Collections</a>
-					</li>
-					<li class="header-item"><a href="" class="header-link">Blog</a></li>
-				</ul>
-				<ul class="header-list-login">
-					<li class="header-login-item">
-						<button type="button" class="header-login-button">Login</button>
-					</li>
-					<li class="header-login-item">
-						<button type="button" class="header-signup-button">Sign Up</button>
-					</li>
-				</ul>
+			<div class="container header-wrap">
+                <a href="#" class="logo logo-header">antools.</a>
+                <ul class="header-list-connections">
+                    <li class="header-item">
+                        <a href="" class="header-link">Home</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-link">Categories</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-link">My Collections</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-link">Blog</a>
+                    </li>
+                </ul>
+                <ul class="header-list-login">
+                    <li class="header-login-item">
+                        <button type="button" class="header-button header-login-button">Login</button>
+                    </li>
+                    <li class="header-login-item">
+                        <button type="button" class="header-button header-signup-button">Sign Up</button>
+                    </li>
+                </ul>
 			</div>
 		</header>
 		<main class="main">
 			<section class="section-welcome">
-				<div class="container">
+				<div class="container section-welcome-wrap">
 					<h1 class="section-welcome-title">
-						Awesome tools for Designer & Developer.
+						Awesome tools for Designer & Developer <span class="section-welcome-orange-dot">.</span>
 					</h1>
 					<p class="section-welcome-text">
 						Antool is a web collection of information on paid or free Design and
 						Development tools
 					</p>
-					<form action="" class="section-welcome-form">
+					<form class="section-welcome-form">
 						<input
 							type="text"
 							class="section-welcome-form-input"
@@ -54,210 +61,304 @@
 					</form>
 					<ul class="section-welcome-icons-list">
                         <li class="section-welcome-icon">
-                            <button type="button" class="section-welcome-icon-button"> </button>
+                            <button type="button" class="section-welcome-icon-button"><img class="section-welcome-icon-image" src="./images/icon_facebook.png" alt="facebook icon"></button>
                         </li>
                         <li class="section-welcome-icon">
-                            <button type="button" class="section-welcome-icon-button"> </button>
+                            <button type="button" class="section-welcome-icon-button"><img class="section-welcome-icon-image" src="./images/icon_instagram.png" alt="instagram icon"></button>
                         </li>
                         <li class="section-welcome-icon">
-                            <button type="button" class="section-welcome-icon-button"> </button>
+                            <button type="button" class="section-welcome-icon-button"><img class="section-welcome-icon-image" src="./images/icon_twitter.png" alt="twitter icon"></button>
                         </li>
                     </ul>
 				</div>
 			</section>
             <section class="section-products">
-                <h2 class="section-products-title">Most Popular Tools</h2>
-                <p class="section-products-text">Tools for the best Designers and Developers most popularly used in the world</p>
-                <ul class="section-products-list">
-                    <li class="section-products-item">
-                        <div class="section-products-item-wrap">
-                            <h3 class="section-products-item-title">FIGMA</h3>
-                            <p class="section-products-item-aftertitle">Free</p>
-                        </div>
-                        <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="section-products-icons-list">
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                        </ul>
-                        <button type="button" class="section-products-item-button">Visit</button>
-                    </li>
-                    <li class="section-products-item">
-                        <div class="section-products-item-wrap">
-                            <h3 class="section-products-item-title">Sketch</h3>
-                            <p class="section-products-item-aftertitle">Trial & Paid</p>
-                        </div>
-                        <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="section-products-icons-list">
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                        </ul>
-                        <button type="button" class="section-products-item-button">Visit</button>
-                    </li>
-                    <li class="section-products-item">
-                        <div class="section-products-item-wrap">
-                            <h3 class="section-products-item-title">Visual Studio Code</h3>
-                            <p class="section-products-item-aftertitle">Free</p>
-                        </div>
-                        <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="section-products-icons-list">
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                        </ul>
-                        <button type="button" class="section-products-item-button">Visit</button>
-                    </li>
-                    <li class="section-products-item">
-                        <div class="section-products-item-wrap">
-                            <h3 class="section-products-item-title">Notion</h3>
-                            <p class="section-products-item-aftertitle">Free & Paid</p>
-                        </div>
-                        <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="section-products-icons-list">
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                        </ul>
-                        <button type="button" class="section-products-item-button">Visit</button>
-                    </li>
-                    <li class="section-products-item">
-                        <div class="section-products-item-wrap">
-                            <h3 class="section-products-item-title">Slack</h3>
-                            <p class="section-products-item-aftertitle">Free & Paid</p>
-                        </div>
-                        <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="section-products-icons-list">
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                        </ul>
-                        <button type="button" class="section-products-item-button">Visit</button>
-                    </li>
-                    <li class="section-products-item">
-                        <div class="section-products-item-wrap">
-                            <h3 class="section-products-item-title">Invision</h3>
-                            <p class="section-products-item-aftertitle">Free & Paid</p>
-                        </div>
-                        <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="section-products-icons-list">
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                            <li class="section-products-icon">
-                                <button type="button" class="section-products-icon-button"> </button>
-                            </li>
-                        </ul>
-                        <button type="button" class="section-products-item-button">Visit</button>
-                    </li>
-                </ul>
-                <button type="button" class="section-products-button">Load More</button>
+                <div class="container">
+                    <h2 class="section-products-title title">Most Popular Tools</h2>
+                    <p class="section-products-text">Tools for the best Designers and Developers most popularly used in the world</p>
+                    <ul class="section-products-list">
+                        <li class="section-products-item">
+                            <img width="64" height="64" src="./images/figma_logo.png" alt="figma logo">
+                            <div class="section-products-item-wrap">
+                                <h3 class="section-products-item-title">FIGMA</h3>
+                                <p class="section-products-item-aftertitle">Free</p>
+                            </div>
+                            <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="section-product-buttons-wrap">
+                                <ul class="section-products-icons-list">
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-heart-image" src="./images/icon_heart.png" alt="heart icon"></button>
+                                    </li>
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-add-image" src="./images/icon_add.png" alt="add to folder icon"></button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="section-products-item-button">Visit</button>
+                            </div>
+                        </li>
+                        <li class="section-products-item">
+                            <img width="64" height="57" src="./images/sketch_logo.png" alt="figma logo">
+                            <div class="section-products-item-wrap">
+                                <h3 class="section-products-item-title">Sketch</h3>
+                                <p class="section-products-item-aftertitle">Trial & Paid</p>
+                            </div>
+                            <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="section-product-buttons-wrap">
+                                <ul class="section-products-icons-list">
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-heart-image" src="./images/icon_heart.png" alt="heart icon"></button>
+                                    </li>
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-add-image" src="./images/icon_add.png" alt="add to folder icon"></button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="section-products-item-button">Visit</button>
+                            </div>
+                        </li>
+                        <li class="section-products-item">
+                            <img width="65" height="63" src="./images/vs_code_logo.png" alt="figma logo">
+                            <div class="section-products-item-wrap">
+                                <h3 class="section-products-item-title">Visual Studio Code</h3>
+                                <p class="section-products-item-aftertitle">Free</p>
+                            </div>
+                            <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="section-product-buttons-wrap">
+                                <ul class="section-products-icons-list">
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-heart-image" src="./images/icon_heart.png" alt="heart icon"></button>
+                                    </li>
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-add-image" src="./images/icon_add.png" alt="add to folder icon"></button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="section-products-item-button">Visit</button>
+                            </div>
+                        </li>
+                        <li class="section-products-item">
+                            <img width="64" height="64" src="./images/notion_logo.png" alt="figma logo">
+                            <div class="section-products-item-wrap">
+                                <h3 class="section-products-item-title">Notion</h3>
+                                <p class="section-products-item-aftertitle">Free & Paid</p>
+                            </div>
+                            <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="section-product-buttons-wrap">
+                                <ul class="section-products-icons-list">
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-heart-image" src="./images/icon_heart.png" alt="heart icon"></button>
+                                    </li>
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-add-image" src="./images/icon_add.png" alt="add to folder icon"></button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="section-products-item-button">Visit</button>
+                            </div>
+                        </li>
+                        <li class="section-products-item">
+                            <img width="65" height="64" src="./images/slack_logo.png" alt="figma logo">
+                            <div class="section-products-item-wrap">
+                                <h3 class="section-products-item-title">Slack</h3>
+                                <p class="section-products-item-aftertitle">Free & Paid</p>
+                            </div>
+                            <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="section-product-buttons-wrap">
+                                <ul class="section-products-icons-list">
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-heart-image" src="./images/icon_heart.png" alt="heart icon"></button>
+                                    </li>
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-add-image" src="./images/icon_add.png" alt="add to folder icon"></button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="section-products-item-button">Visit</button>
+                            </div>
+                        </li>
+                        <li class="section-products-item">
+                            <img width="65" height="64" src="./images/invision_logo.png" alt="figma logo">
+                            <div class="section-products-item-wrap">
+                                <h3 class="section-products-item-title">Invision</h3>
+                                <p class="section-products-item-aftertitle">Free & Paid</p>
+                            </div>
+                            <p class="section-products-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="section-product-buttons-wrap">
+                                <ul class="section-products-icons-list">
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-heart-image" src="./images/icon_heart.png" alt="heart icon"></button>
+                                    </li>
+                                    <li class="section-products-icon">
+                                        <button type="button" class="section-products-icon-button"><img class="section-products-icon-add-image" src="./images/icon_add.png" alt="add to folder icon"></button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="section-products-item-button">Visit</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="section-products-button">Load More</button>
+                </div>
             </section>
             <section class="section-partners">
-                <h3 class="section-partners-title">Trusted more than 150+ brand</h3>
-                <ul class="section-partners-list">
-                    <li class="section-partners-item">
-                        <p class="section-partner-text">Microsoft</p>
-                    </li>
-                    <li class="section-partners-item">
-                        <p class="section-partner-text">Google</p>
-                    </li>
-                    <li class="section-partners-item">
-                        <p class="section-partner-text">slack</p>
-                    </li>
-                    <li class="section-partners-item">
-                        <p class="section-partner-text">WordPress</p>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h3 class="section-partners-title">Trusted more than 150+ brand</h3>
+                    <ul class="section-partners-list">
+                        <li class="section-partners-item">
+                            <p class="section-partner-text">Microsoft</p>
+                        </li>
+                        <li class="section-partners-item">
+                            <p class="section-partner-text">Google</p>
+                        </li>
+                        <li class="section-partners-item">
+                            <p class="section-partner-text">slack</p>
+                        </li>
+                        <li class="section-partners-item">
+                            <p class="section-partner-text">WordPress</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="section-newcomertools">
-                <div class="section-newcomertools-welcome">
-                    <h2 class="section-newcomertools-title">Newcomer Tools</h2>
-                    <p class="section-newcomertools-text">Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
-                    <button type="button" class="section-newcomertools-button">Explore more</button>
+                <div class="container">
+                    <ul class="section-newcomertools-list">
+                        <div class="section-newcomertools-welcome">
+                            <h2 class="section-newcomertools-title title">Newcomer Tools</h2>
+                            <p class="section-newcomertools-text">Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
+                            <button type="button" class="section-newcomertools-button">Explore more</button>
+                        </div>
+                        <li class="section-newcomertools-item1">
+                            <div class="section-newcomertools-item-wrap">
+                                <h3 class="section-newcomertools-title">Zeplin</h3>
+                                <p class="section-newcomertools-aftertitle">Free & Paid</p>
+                            </div>
+                            <p class="section-newcomertools-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul class="section-newcomertools-icons-list">
+                                <li class="section-newcomertools-icon">
+                                    <button type="button" class="section-newcomertools-icon-button"><img class="section-newcomertools-icon-heart-image" src="./images/icon_heart.png" alt="heart icon"></button>
+                                </li>
+                                <li class="section-newcomertools-icon">
+                                    <button type="button" class="section-newcomertools-icon-button"><img class="section-newcomertools-icon-add-image" src="./images/icon_add.png" alt="add to folder icon"></button>
+                                </li>
+                            </ul>
+                            <button type="button" class="section-newcomertools-item-button">Visit</button>
+                        </li>
+                        <li class="section-newcomertools-item2">
+                            <div class="section-newcomertools-item-wrap">
+                                <h3 class="section-newcomertools-title">PHPStorm</h3>
+                                <p class="section-newcomertools-aftertitle">Free</p>
+                            </div>
+                            <p class="section-newcomertools-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul class="section-newcomertools-icons-list">
+                                <li class="section-newcomertools-icon">
+                                    <button type="button" class="section-newcomertools-icon-button"><img class="section-newcomertools-icon-heart-image" src="./images/icon_heart.png" alt="heart icon"></button>
+                                </li>
+                                <li class="section-newcomertools-icon">
+                                    <button type="button" class="section-newcomertools-icon-button"><img class="section-newcomertools-icon-add-image" src="./images/icon_add.png" alt="add to folder icon"></button>
+                                </li>
+                            </ul>
+                            <button type="button" class="section-newcomertools-item-button">Visit</button>
+                        </li>
+                        <li class="section-newcomertools-item3">
+                            <div class="section-newcomertools-item-wrap">
+                                <h3 class="section-newcomertools-title">Toolbox</h3>
+                                <p class="section-newcomertools-aftertitle">Free</p>
+                            </div>
+                            <p class="section-newcomertools-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul class="section-newcomertools-icons-list">
+                                <li class="section-newcomertools-icon">
+                                    <button type="button" class="section-newcomertools-icon-button"><img class="section-newcomertools-icon-heart-image" src="./images/icon_heart.png" alt="heart icon"></button>
+                                </li>
+                                <li class="section-newcomertools-icon">
+                                    <button type="button" class="section-newcomertools-icon-button"><img class="section-newcomertools-icon-add-image" src="./images/icon_add.png" alt="add to folder icon"></button>
+                                </li>
+                            </ul>
+                            <button type="button" class="section-newcomertools-item-button">Visit</button>
+                        </li>
+                        <li class="section-newcomertools-item4">
+                            <div class="section-newcomertools-item-wrap">
+                                <h3 class="section-newcomertools-title">Procreate</h3>
+                                <p class="section-newcomertools-aftertitle">Paid</p>
+                            </div>
+                            <p class="section-newcomertools-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul class="section-newcomertools-icons-list">
+                                <li class="section-newcomertools-icon">
+                                    <button type="button" class="section-newcomertools-icon-button"><img class="section-newcomertools-icon-heart-image" src="./images/icon_heart.png" alt="heart icon"></button>
+                                </li>
+                                <li class="section-newcomertools-icon">
+                                    <button type="button" class="section-newcomertools-icon-button"><img class="section-newcomertools-icon-add-image" src="./images/icon_add.png" alt="add to folder icon"></button>
+                                </li>
+                            </ul>
+                            <button type="button" class="section-newcomertools-item-button">Visit</button>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="section-newcomertools-list">
-                    <li class="section-newcomertools-item1">
-                        <div class="section-newcomertools-item-wrap">
-                            <h3 class="section-newcomertools-title">Zeplin</h3>
-                            <p class="section-newcomertools-aftertitle">Free & Paid</p>
-                        </div>
-                        <p class="section-newcomertools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="section-newcomertools-icons-list">
-                            <li class="section-newcomertools-icon">
-                                <button type="button" class="section-newcomertools-icon-button"> </button>
-                            </li>
-                            <li class="section-newcomertools-icon">
-                                <button type="button" class="section-newcomertools-icon-button"> </button>
-                            </li>
-                            <button type="button" class="section-newcomertools-item-button">Visit</button>
-                        </ul>
-                    </li>
-                    <li class="section-newcomertools-item2">
-                        <div class="section-newcomertools-item-wrap">
-                            <h3 class="section-newcomertools-title">PHPStorm</h3>
-                            <p class="section-newcomertools-aftertitle">Free</p>
-                        </div>
-                        <p class="section-newcomertools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="section-newcomertools-icons-list">
-                            <li class="section-newcomertools-icon">
-                                <button type="button" class="section-newcomertools-icon-button"> </button>
-                            </li>
-                            <li class="section-newcomertools-icon">
-                                <button type="button" class="section-newcomertools-icon-button"> </button>
-                            </li>
-                            <button type="button" class="section-newcomertools-item-button">Visit</button>
-                        </ul>
-                    </li>
-                    <li class="section-newcomertools-item3">
-                        <div class="section-newcomertools-item-wrap">
-                            <h3 class="section-newcomertools-title">Toolbox</h3>
-                            <p class="section-newcomertools-aftertitle">Free</p>
-                        </div>
-                        <p class="section-newcomertools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="section-newcomertools-icons-list">
-                            <li class="section-newcomertools-icon">
-                                <button type="button" class="section-newcomertools-icon-button"> </button>
-                            </li>
-                            <li class="section-newcomertools-icon">
-                                <button type="button" class="section-newcomertools-icon-button"> </button>
-                            </li>
-                            <button type="button" class="section-newcomertools-item-button">Visit</button>
-                        </ul>
-                    </li>
-                    <li class="section-newcomertools-item4">
-                        <div class="section-newcomertools-item-wrap">
-                            <h3 class="section-newcomertools-title">Procreate</h3>
-                            <p class="section-newcomertools-aftertitle">Paid</p>
-                        </div>
-                        <p class="section-newcomertools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="section-newcomertools-icons-list">
-                            <li class="section-newcomertools-icon">
-                                <button type="button" class="section-newcomertools-icon-button"> </button>
-                            </li>
-                            <li class="section-newcomertools-icon">
-                                <button type="button" class="section-newcomertools-icon-button"> </button>
-                            </li>
-                            <button type="button" class="section-newcomertools-item-button">Visit</button>
-                        </ul>
-                    </li>
-                </ul>
+            </section>
+            <section class="section-employees">
+                <div class="container">
+                    <button type="button" class="section-employees-button-left"> </button>
+                    <div class="employee-summary">
+                        <img src="./images/employee-image.png" alt="employee-ronald-richards-photo" class="employee-image">
+                        <p class="employee-text">Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+                    </div>
+                    <button type="button" class="section-employees-button-right"> </button>
+                </div>
+            </section>
+            <section class="section-contributor">
+                <div class="container">
+                    <h2 class="section-contributor-title title">Become a contributor?</h2>
+                    <p class="section-contributor-text">Join us and get tips & tricks to become a great Designer and Developer</p>
+                    <form class="section-contributor-form">
+                        <input type="email" class="section-contributor-input" placeholder="Enter your email...">
+                        <button type="button" class="section-contributor-button">Join Us</button>
+                    </form>
+                </div>
             </section>
 		</main>
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer-general-infomation">
+                    <li class="footer-general-infomation-item">
+                        <a href="#" class="logo logo-footer">antools</a>
+                        <p class="footer-general-infomation-copyright">Copyright 2021. Antools</p>
+                        <p class="footer-general-infomation-text">Antool is a web collection of information on paid or free Design and Development tools</p>
+                    </li>
+                </ul>
+                <ul class="footer-contact-us-list">
+                    <li class="footer-contact-us-item">
+                        <a href="#" class="footer-contact-us-title">Contact Us</a>
+                    </li>
+                    <li class="footer-contact-us-item">
+                        <a href="#" class="footer-contact-us-text">+621987463</a>
+                    </li>
+                    <li class="footer-contact-us-item">
+                        <a href="#" class="footer-contact-us-text">M Building, No.10 A</a>
+                    </li>
+                    <li class="footer-contact-us-item">
+                        <a href="#" class="footer-contact-us-text">antools@awesome.com</a>
+                    </li>
+                </ul>
+                <ul class="footer-categories-list">
+                    <li class="footer-categories-item">
+                        <a href="#" class="footer-categories-title">Categories</a>
+                    </li>
+                    <li class="footer-categories-item">
+                        <a href="#" class="footer-categories-text">Design</a>
+                    </li>
+                    <li class="footer-categories-item">
+                        <a href="#" class="footer-categories-text">Development</a>
+                    </li>
+                </ul>
+                <ul class="footer-company-info-list">
+                    <li class="footer-company-info-item">
+                        <a href="#" class="footer-company-info-title">Company Info</a>
+                    </li>
+                    <li class="footer-company-info-item">
+                        <a href="#" class="footer-company-info-text">About Us</a>
+                    </li>
+                    <li class="footer-company-info-item">
+                        <a href="#" class="footer-company-info-text">Our Partners</a>
+                    </li>
+                    <li class="footer-company-info-item">
+                        <a href="#" class="footer-company-info-text">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 	</body>
 </html>
