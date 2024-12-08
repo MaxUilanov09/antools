@@ -6,6 +6,7 @@
     --unfocused-text-color: rgba(255, 255, 255, 0.78);
     --semi-transparent-text-color: rgba(255, 255, 255, 0.55);
     --partners-text-color: rgba(255, 255, 255, 0.2);
+    --footer-top-border-color: rgba(255, 255, 255, 0.15);
     --button-border-color: rgba(255, 255, 255, 0.1);
     --input-placeholder-color: rgba(131, 122, 147, 1);
     --aftertitle-color: rgba(255, 165, 55, 0.55);
@@ -13,7 +14,8 @@
     --background-button-color: rgba(255, 110, 48, 1);
     --product-item-gradient-color: rgba(255, 110, 48, 0.6);
     --background-input-color: rgba(40, 48, 54, 1);
-    --product-item-gradient: radial-gradient(circle at 87.6% 9%, var(--product-item-gradient-color) 0%, var(--background-input-color) 12.3%); /* 87.6% 9% */
+    --product-item-gradient: radial-gradient(circle at 87.6% 9%, var(--product-item-gradient-color) 0%, var(--background-input-color) 11.44%);
+    --newcomertools-item-gradient: radial-gradient(circle at 100% -5.07%, var(--product-item-gradient-color) 0%, var(--background-input-color) 22.1%);
 }
 
 ul {
@@ -34,7 +36,6 @@ body {
     width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
-    border: 1px solid red;
 }
 
 .section-welcome {
@@ -76,11 +77,6 @@ body {
     color: var(--semi-transparent-text-color);
 }
 
-.employee-text {
-    color: var(--unfocused-text-color);
-    font-family: "Roboto";
-}
-
 /* text decoration end */
 
 /* button decoration start */
@@ -103,9 +99,13 @@ button {
     }
     
 .section-newcomertools-welcome { grid-area: 1 / 1 / 5 / 3; }
+
 .section-newcomertools-item1 { grid-area: 1 / 3 / 2 / 4; }
+
 .section-newcomertools-item2 { grid-area: 1 / 4 / 2 / 5; }
+
 .section-newcomertools-item3 { grid-area: 2 / 3 / 3 / 4; }
+
 .section-newcomertools-item4 { grid-area: 2 / 4 / 3 / 5; }
 
 /* grid settings end */
@@ -146,7 +146,7 @@ button {
     width: 19px;
     height: 21px;
     margin-right: 22px;
-    background-image: url(./images/icon_logo_header.png);
+    background-image: url(./images/icon_logo.png);
 }
 
 .header-link {
@@ -246,6 +246,7 @@ button {
     font-weight: 500;
     margin-bottom: 25px;
 }
+
 .section-products-text {
     text-align: center;
     font-size: 18px;
@@ -253,25 +254,30 @@ button {
     font-weight: 500;
     margin-bottom: 90px;
 }
+
 .section-products-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .section-products-item {
     display: block;
     width: 392px;
     height: 294px;
     border-radius: 15px;
 }
+
 .section-products-item:hover {
     transform: translate(0px, -20px);
     background: var(--product-item-gradient);
 }
+
 .section-products-item-wrap {
     display: inline-block;
     margin-left: 30px;
 }
+
 .section-products-item-title {
     color: var(--unfocused-text-color);
     font-size: 24px;
@@ -279,53 +285,321 @@ button {
     font-weight: 500;
     margin-bottom: 3px;
 }
+
 .section-products-item-aftertitle {
     color: var(--aftertitle-color);
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
 }
+
 .section-products-item-text {
     font-size: 16px;
     line-height: 1.875;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 .section-product-buttons-wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .section-products-icons-list {
     display: flex;
     justify-content: space-between;
     width: 96px;
 }
+
 .section-products-icon-button:hover {
     color: var(--background-input-color);
     border-radius: 8px;
     /* TODO: Make the heart red */
 }
+
 .section-products-item-button {
     width: 106px;
     height: 42px;
     color: var(--unfocused-text-color);
 }
+
 .section-products-item-button:hover {
     color: var(--pure-white-button-color);
     background-color: var(--background-button-color);
     border-radius: 8px;
 }
+
 .section-products-button {
     display: block;
     font-size: 20px;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 auto;
+    margin-top: 100px;
     padding: 17px 38px;
     color: var(--background-button-color);
     border: 1px solid var(--button-border-color);
 }
 
 /* section products setting end */
+
+.trusted-brands-image {
+    display: block;
+    margin: 200px auto;
+}
+
+/* section newcomertools setting start */
+
+.section-newcomertools-title {
+    margin-bottom: 30px;
+}
+
+.section-newcomertools-text {
+    width: 427px;
+    font-size: 18px;
+    line-height: 1.667;
+    font-weight: 400;
+    color: var(--semi-transparent-text-color);
+    margin-bottom: 60px;
+}
+
+.section-newcomertools-button {
+    display: block;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 60px;
+    padding: 16px 45px;
+    color: var(--pure-white-button-color);
+    background-color: var(--background-button-color);
+    border-radius: 8px;
+}
+
+.section-newcomertools-item {
+    display: block;
+    width: 288px;
+    height: 284px;
+    border-radius: 15px;
+}
+
+.section-newcomertools-item:hover {
+    transform: translate(0px, -20px);
+    background: var(--newcomertools-item-gradient);
+}
+
+.section-newcomertools-item-wrap {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.section-newcomertools-item-title {
+    color: var(--unfocused-text-color);
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.section-newcomertools-item-aftertitle {
+    color: var(--aftertitle-color);
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.section-newcomertools-item-text {
+    font-size: 14px;
+    line-height: 2.143;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-newcomertools-buttons-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-newcomertools-icons-list {
+    display: flex;
+    justify-content: space-between;
+    width: 96px;
+}
+
+.section-newcomertools-icon-button:hover {
+    color: var(--background-input-color);
+    border-radius: 8px;
+    /* TODO: Make the heart red */
+}
+
+.section-newcomertools-item-button {
+    width: 106px;
+    height: 42px;
+    color: var(--unfocused-text-color);
+}
+
+.section-newcomertools-item-button:hover {
+    color: var(--pure-white-button-color);
+    background-color: var(--background-button-color);
+    border-radius: 8px;
+}
+
+/* section newcomertools setting end */
+
+/* section employee setting start */
+
+.section-employees-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.section-employees-button-left {
+    display: inline-block;
+    margin-right: 123px;
+}
+
+.section-employees-button-right {
+    display: inline-block;
+    margin-left: 173px;
+}
+
+.employee-image {
+    display: inline;
+}
+
+.employee-text {
+    display: inline-block;
+    color: var(--unfocused-text-color);
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 2.143;
+    font-weight: 400;
+    width: 393px;
+    margin-left: 57px;
+}
+
+.section-employees-indicator {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+/* section employee setting end */
+
+/* section contributor setting start */
+
+.section-contributor-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section-contributor-text-wrap {
+    width: 427px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.section-contributor-text {
+    font-size: 18px;
+    line-height: 1.667;
+    font-weight: 500;
+    color: var(--semi-transparent-text-color);
+    text-align: center;
+}
+
+.section-contributor-form {
+    display: flex;
+    width: 549px;
+    height: 64px;
+    background-color: var(--background-input-color);
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 240px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-contributor-input {
+    background: none;
+    border: none;
+    margin-left: 24px;
+}
+
+.section-contributor-button {
+    width: 130px;
+    height: 48px;
+    color: var(--pure-white-button-color);
+    background-color: var(--background-button-color);
+    border-radius: 8px;
+    margin-right: 13px;
+}
+
+/* section contributor setting end */
+
+/* footer setting start */
+
+.footer {
+    border-top: 1px solid var(--footer-top-border-color);
+}
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-general-infomation {
+    margin-left: 108px;
+    margin-right: 156px;
+}
+.logo-footer::before {
+    content: " ";
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-right: 12px;
+    background-image: url(./images/icon_logo_footer.png);
+    background-size: 38px 38px;
+}
+.footer-general-infomation-copyright {
+    color: var(--white-title-color);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 23px;
+}
+.footer-general-infomation-text {
+    color: var(--semi-transparent-text-color);
+    font-size: 14px;
+    line-height: 1.785;
+    font-weight: 400;
+    margin-top: 23px;
+    width: 260px;
+}
+.footer-list {
+    margin-right: 115px;
+}
+.footer-company-info-list {
+    margin-right: 203px;
+}
+.footer-title {
+    display: block;
+    color: var(--white-title-color);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footer-text {
+    display: block;
+    color: var(--semi-transparent-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* footer setting end */
