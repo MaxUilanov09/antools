@@ -52,6 +52,11 @@ body {
     height: 36px;
 }
 
+.facebook-icon {
+    width: auto;
+    height: auto;
+}
+
 .section-products-icon-heart-image, .section-newcomertools-icon-heart-image {
     width: 28px;
     height: 28px;
@@ -145,8 +150,8 @@ button {
     display: inline-block;
     width: 19px;
     height: 21px;
-    margin-right: 22px;
-    background-image: url(./images/icon_logo.png);
+    margin-right: 21px;
+    background-image: url(./images/icon_logo_header.png);
 }
 
 .header-link {
@@ -169,10 +174,6 @@ button {
 
 
 /* section welcome setting start */
-
-/* .section-welcome-wrap {
-    margin-left: 108px;
-} */
 
 .section-welcome-title {
     display: block;
@@ -245,6 +246,7 @@ button {
     line-height: 1.3;
     font-weight: 500;
     margin-bottom: 25px;
+    margin-top: 200px;
 }
 
 .section-products-text {
@@ -268,6 +270,14 @@ button {
     border-radius: 15px;
 }
 
+.section-products-wrap-item {
+    display: block;
+    width: 326px;
+    height: 228px;
+    margin-left: 33px;
+    margin-top: 33px;
+}
+
 .section-products-item:hover {
     transform: translate(0px, -20px);
     background: var(--product-item-gradient);
@@ -276,6 +286,7 @@ button {
 .section-products-item-wrap {
     display: inline-block;
     margin-left: 30px;
+    height: 66px;
 }
 
 .section-products-item-title {
@@ -284,6 +295,7 @@ button {
     line-height: 1.5;
     font-weight: 500;
     margin-bottom: 3px;
+    margin-top: 0px;
 }
 
 .section-products-item-aftertitle {
@@ -311,6 +323,7 @@ button {
     display: flex;
     justify-content: space-between;
     width: 96px;
+    height: 42px;
 }
 
 .section-products-icon-button:hover {
@@ -384,6 +397,14 @@ button {
     border-radius: 15px;
 }
 
+.section-newcomertools-wrap-item {
+    display: block;
+    width: 245px;
+    height: 228px;
+    margin-left: 22px;
+    margin-top: 28px;
+}
+
 .section-newcomertools-item:hover {
     transform: translate(0px, -20px);
     background: var(--newcomertools-item-gradient);
@@ -392,6 +413,7 @@ button {
 .section-newcomertools-item-wrap {
     display: inline-block;
     margin-left: 30px;
+    height: 66px;
 }
 
 .section-newcomertools-item-title {
@@ -400,6 +422,7 @@ button {
     line-height: 1.5;
     font-weight: 500;
     margin-bottom: 3px;
+    margin-top: 0px;
 }
 
 .section-newcomertools-item-aftertitle {
