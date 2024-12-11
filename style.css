@@ -276,11 +276,25 @@ button {
     height: 228px;
     margin-left: 33px;
     margin-top: 33px;
+    transition: all 0.5s;
+}
+
+.section-products-wrap-vs-code {
+    display: block;
+    width: 328px;
+    height: 228px;
+    margin-left: 33px;
+    margin-top: 33px;
 }
 
 .section-products-item:hover {
     transform: translate(0px, -20px);
+    transition: all 0.5s;
     background: var(--product-item-gradient);
+}
+
+.vs-code-image {
+    display: inline-block;
 }
 
 .section-products-item-wrap {
@@ -403,10 +417,12 @@ button {
     height: 228px;
     margin-left: 22px;
     margin-top: 28px;
+    transition: all 0.5s;
 }
 
 .section-newcomertools-item:hover {
     transform: translate(0px, -20px);
+    transition: all 0.5s;
     background: var(--newcomertools-item-gradient);
 }
 
